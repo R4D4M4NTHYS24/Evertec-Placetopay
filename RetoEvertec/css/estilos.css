@@ -414,6 +414,26 @@ img{
 	.cursos__titulo{
 		font-size: 40px;
 	}
+	.hero{
+	
+		color: black;
+		padding: 1px 10px;
+		display: grid;
+		grid-template-columns: minmax(auto, 480px);
+		justify-content: center;
+	}
+	.hero-container{
+		display: grid;
+		grid-template-columns: 100%;
+		grid-template-areas: "bronce"
+							"silver"
+							"gold"
+							"footer";                                                                               
+												
+		grid-gap: 10px;
+		margin: 10px;
+		border-color: black;
+	}
 }
 
 @media(min-width: 1024px){
