@@ -1,95 +1,127 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
 	<meta charset="UTF-8">
 	<title>Evertec</title>
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-	<link rel="stylesheet" href="./css/style.css">
-
-	<nav class="fadeInDown">
-    <div class="logo_image">
-		<a href="index.html"><img src="image/logo.png" alt=""></a>
-    </div>
-    <div class="nav_options">
-      <ul>
-        <li><a href="index.html">Inicio</a></li>
-        <li><a href="characters.html">Contacto</a></li>
-      </ul>
-    </div>
-  </nav>
+	<link rel="stylesheet" href="css/estilos.css">
+	<link rel="stylesheet" href="css/fonts.css">
+	
+	<header class="header contenedor">
+		<img src="img/logo.png" alt="" class="banner__img">
+		<span class="icon-menu" id="btn-menu"></span>
+		<nav class="nav" id="nav">
+			<ul class="menu">
+				<li class="menu__item"><a class="menu__link select" href="index.html">Inicio</a></li>
+				<li class="menu__item"><a class="menu__link" href="cursos.html">Infografia</a></li>
+				<li class="menu__item"><a class="menu__link" href="docentes.html">Informe</a></li>
+				<li class="menu__item"><a class="menu__link" href="contacto.html">Contacto</a></li>
+			</ul>
+		</nav>
+	</header>
+	
+	
 </head>
 <body>
+	
+	<div class="banner">
+		<img src="img/banner.jpg" alt="" class="banner__img">
+	
+		
+		<div class="contenedor">
+		
+			<p class="banner__txt"><h3>Únete al programa de aliados de PlacetoPay y disfruta todos sus beneficios. Ganarás
+				comisión por integraciones, referenciación, certificación, entre otros.</h3>
+				</p>
+		</div>
+	</div>
+
 	<section class="post-list">
 		<a href="details.html" class="post">
 			<figure class="post-image">
-				<img class="image" id="im1" src="./image/banner.jpg" alt="">
+				<img class="image" id="im1" src="./img/download.png" alt="">
 			</figure>
+			<p class="banner2__txt"><h4>Únete, integra PlacetoPay, gana.
+				* Aplica para empresas y personas naturales.</h4>
+				
+				</p>
 			<span class="post-overlay"></span>
 		</a>
 
 	
 
 	</section>
-	
+
+	<!--Contenido y planes de pago-->
+
 	<div class="about">
-	<h2>Explota al maximo el potencial de tu negocio</h2>
-	<p>Ofrecemos soluciones tecnológicas críticas que le permiten a nuestros clientes emitir, 
-		procesar y aceptar transacciones de manera segura. 
-		Brindamos estas soluciones completas a través de numerosos canales y mercados geográficos. 
-		Dale un vistazo a nuestros planes y vive desde hoy la nueva economia digital!
-	</p></div>
-	<div class="hero">
-		<div class="hero-container">
-			<div class="bronce">
+		<h2>Explota al maximo el potencial de tu negocio</h2>
+		<p>Ofrecemos soluciones tecnológicas críticas que le permiten a nuestros clientes emitir, 
+			procesar y aceptar transacciones de manera segura. 
+			Brindamos estas soluciones completas a través de numerosos canales y mercados geográficos. 
+			Dale un vistazo a nuestros planes y vive desde hoy la nueva economia digital!
+		</p></div>
+		<div class="hero">
+			<div class="hero-container">
+				<div class="bronce">
+					<p>
+						<img src="img/document.png" alt="bronce_img">
+						<h2>Bronce:</h2>
+							Comisión<br><br>  
+							5% del valor de la integración. <br><br>
+							  Permanencia 1 integración al año. <br><br>  
+							  Beneficio <br><br>
+							  Certificado.
+							   
+					</p>
+					<a href="contacto.html"><button class="main_button">Lo quiero!</button></a> 
+				</div>
+			
+			<div class="silver">
 				<p>
-					<img src="image/document.png" alt="bronce_img">
-					<h2>Bronce:</h2>
-						Comisión<br><br>  
-						5% del valor de la integración. <br><br>
-						  Permanencia 1 integración al año. <br><br>  
-						  Beneficio <br><br>
-						  Certificado.
-						   
+					<img src="img/users.png" alt="silver_img">
+					<h2>Silver:</h2>
+					Comisión<br><br>   
+					10% del valor de la integración + el 3% de la facturación de los clientes referidos.<br><br>     
+					Permanencia 5 integraciones al año.<br><br>     
+					Beneficios <br><br>  
+					• Aparecer en el portal de PlacetoPay con publicación de caso de éxito.<br><br>  
+					• Referenciación.<br><br>  
+					• Certificado.
 				</p>
-				<a href="characters.html"><button class="main_button">Lo quiero!</button></a> 
+				<a href="contacto.html"><button class="main_button">Lo quiero!</button></a>
 			</div>
-		<!--	
-		<h1 class="title">
-			Xperty
-		</h1>-->
-		<div class="silver">
-			<p>
-				<img src="image/users.png" alt="silver_img">
-				<h2>Silver:</h2>
-				Comisión<br><br>   
-				10% del valor de la integración + el 3% de la facturación de los clientes referidos.<br><br>     
-				Permanencia 5 integraciones al año.<br><br>     
-				Beneficios <br><br>  
-				• Aparecer en el portal de PlacetoPay con publicación de caso de éxito.<br><br>  
-				• Referenciación.<br><br>  
-			    • Certificado.
-			</p>
-		</div>
-
-		<div class="gold">
-			<p>
-				<img src="image/graphics.png" alt="silver_img">
-				<h2>Gold:</h2>
-				Comisión<br><br> 
-				15% del valor de la integración + el 5% de la facturación de los clientes referidos.<br><br> 
-				Permanencia 10 integraciones al año.<br><br> 
-				Beneficios <br><br> 
-				• Aparecer en el portal de PlacetoPay con publicación de caso de éxito.<br><br>
-				•Referenciación.<br><br>
-				• Certificado.<br><br> 
-				• Posibilidad de ser ponente en charlas para clientes de PTP. Una vez por año. 
-			</p>
-		  </div>
-
-		  
-
-
-	<script src="js/script.js"></script>
 	
-</body>
+			<div class="gold">
+				<p>
+					<img src="img/graphics.png" alt="silver_img">
+					<h2>Gold:</h2>
+					Comisión<br><br> 
+					15% del valor de la integración + el 5% de la facturación de los clientes referidos.<br><br> 
+					Permanencia 10 integraciones al año.<br><br> 
+					Beneficios <br><br> 
+					• Aparecer en el portal de PlacetoPay con publicación de caso de éxito.<br><br>
+					•Referenciación.<br><br>
+					• Certificado.<br><br> 
+					• Posibilidad de ser ponente en charlas para clientes de PTP. Una vez por año. 
+				</p>
+				<a href="contacto.html"><button class="main_button">Lo quiero!</button></a>
+			  </div>
+	
+
+	
+				
+		</main>
+		<footer class="footer">
+			<div class="social">
+					
+					<a href="" class="icon-twitter"></a>
+					<a href="" class="icon-linkedin"></a>
+					<a href="" class="icon-github"></a>
+				</div>
+				<p class="copy">&copy; Evertec-PlacetoPay - 2020 - Todos los derechos reservados</p>	
+		</footer>
+		<script src="./js/script.js"></script>
+	
+	</body>
 </html>

@@ -1,0 +1,518 @@
+@import url('https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Yanone+Kaffeesatz&display=swap');
+* {
+	box-sizing: border-box;
+
+}
+img{
+	display: block;
+	max-width: 100%;
+}
+
+body{
+	margin: 0;
+	font-family: 'Open Sans', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Yanone Kaffeesatz', sans-serif;
+	letter-spacing: 1.5px;
+}
+
+h4{
+	text-align: center;
+	text-decoration: none;
+	color: #FBA919;
+	padding: 5px;
+}
+
+a{
+	text-decoration: none;
+}
+
+.section__titulo{
+	text-align: center;
+	font-size: 40px;
+	color: #FBA919;
+}
+
+.contenedor{
+	margin: auto;
+	width: 98%;
+}
+
+/*--------------------------------Estilos del header--------------------------------*/
+.header{
+	height: 60px;
+}
+/**/
+.header, .contenedor{
+	display: flex;
+	justify-content: space-between;
+}
+/**/
+.logo, .icon-menu{
+	margin: 5px;
+	color: #fff;
+}
+
+.icon-menu{
+	display: block;
+	width: 40px;
+	height: 40px;
+	font-size: 30px;
+	background: #FBA919;
+	text-align: center;
+	line-height: 45px;
+	border-radius: 5px;
+	margin-left: auto;
+	cursor: pointer;
+}
+/*---------------------------------Estilos del menu---------------------------------*/
+.nav{
+	position: absolute;
+	top: 60px;
+	left: -100%;
+	width: 100%;
+	transition: all 0.4s;
+}
+
+.menu{
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.menu__link{
+	display: block;
+	padding: 15px;
+	background: #FBA919;
+	text-decoration: none;
+	color: #333;
+}
+
+.menu__link:hover, .select{
+	background: white;
+	color: #FBA919;
+}
+
+.mostrar{
+	left: 0;
+}
+/*Sirve para dejar el elemento de la seccion donde el usuario 
+se encuentra actualmente en la pagina para este caso se decidio 
+que era mejor usarse en el hover de arriva .menu__link, .select
+.select{
+	background: white;
+	color: #FBA919;
+}
+*/
+/*--------------------------------------Estilos de banner--------------------------------------*/
+.post{
+	cursor: pointer;
+	position: relative;
+	display: block;
+}
+.post-image{
+	margin: 0;
+}
+
+
+.post-overlay{
+	background: rgba(0,0,0, .4);
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	top: 0;
+	display: none;
+	align-items: center;
+	justify-content: center;
+	color: white;
+	text-align: center;
+}
+
+.post:hover .post-overlay{
+	display: flex;
+	color-interpolation-filters: #000;
+}
+
+.banner{
+	margin-top: 0px;
+	position: relative;
+	z-index: -1000;
+	margin-bottom: 0px;
+}
+
+
+.banner .contenedor{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translateX(-50%) translateY(-50%);
+	width: 80%;
+	color: #fff;
+	text-align: center;
+}
+
+.banner__txt{
+	display: none;
+	text-decoration: none;
+}
+
+
+
+
+/*---------------------------------Estilos de footer---------------------------------*/
+
+.footer{
+	background: #333;
+	color: #fff;
+	padding: 10px;
+	text-align: center;
+}
+
+.footer .social [class^="icon-"]{
+	display: inline-block;
+	color: #333;
+	text-decoration: none;
+	font-size: 30px;
+	padding: 10px;
+	background: white;
+	border-radius: 50%;
+	width: 50px;
+	height: 50px;
+	line-height: 40px;
+}
+/*Estilos contenido y planes*/
+
+
+.post-list{
+	display: grid;
+	grid-template-columns: repeat(1, minmax(100%, 600px));	
+	justify-content: center;
+	
+	margin-top: 0px;
+}
+
+H2{
+	text-align: center;
+}
+
+img{
+	margin:10px auto;
+	display:block;
+	
+}
+
+.about{
+	text-align: center;
+	margin:10px auto;
+	display:block;
+}
+
+.post{
+	cursor: pointer;
+	position: relative;
+	display: block;
+}
+.post-image{
+	margin: 0;
+}
+
+.post-image img{
+	display: inline-block;
+	width: 30%;
+	vertical-align: top;
+	margin-left: 35%;
+}
+
+.post-overlay{
+	background: rgba(0,0,0, .4);
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	top: 0;
+	display: none;
+	align-items: center;
+	justify-content: center;
+	color: white;
+	text-align: center;
+}
+
+.post:hover .post-overlay{
+	display: flex;
+}
+
+.post-likes, .post-comments{
+	width: 80px;
+	margin: 5px;
+	font-weight: bold;
+	text-align: center;
+	display: inline-block;
+}
+
+.main_button{
+	
+  	background-color: white;
+ 
+  	width: 100%;  			 	
+  	padding: 10px;
+  	color: #333;
+  	border: 0;
+  	cursor: pointer;
+  	border-radius: 2px; 
+
+}
+
+.main_button:hover{
+  	color: #ff9800;
+}
+
+/*prueba*/
+
+.hero{
+	
+	color: black;
+	padding: 1px 10px;
+	display: grid;
+	grid-template-columns: minmax(auto, 1024px);
+	justify-content: center;
+}
+.hero-container{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-areas: "bronce silver gold"
+						"bronce silver gold"
+						"bronce silver gold"
+						"footer footer footer";                                                                               
+						                    
+	grid-gap: 10px;
+	margin: 10px;
+	border-color: black;
+}
+.bronce{
+	text-align: left;
+	background: #763c28;
+	grid-area: bronce;
+	   margin: 1px;
+	   padding: 30px;
+	
+}
+.silver{
+	text-align: left;
+	background: silver;
+	grid-area: silver;
+	   margin: 1px;
+	   padding: 30px;
+	
+}
+.gold{
+	text-align: left;
+	background: gold;
+	grid-area: gold;
+	   margin: 1px;
+	   padding: 30px;
+	
+}
+
+.footer{
+	
+	
+	grid-area: footer;
+	   margin: 1px;
+	   padding: 30px;
+	
+}
+
+/*---------------------------------Estilos de responsive---------------------------------*/
+
+@media(min-width: 480px){
+	.about{
+		text-align: center;
+		margin:10px auto;
+		display:block;
+	}
+	.logo{
+		font-size: 40px;
+	}
+	.banner__titulo{
+		font-size: 30px;
+		margin: 5px 0;
+	}
+	.banner__txt{
+		display: block;
+		font-size: 18px;
+		margin: 7px 0;
+	}
+	.info, .cursos{
+		display: flex;
+		justify-content: space-between;
+		margin-top: -50px;
+	}
+	.info__columna{
+		width: 32%;
+	}
+	.info__titulo{
+		font-size: 30px;
+		margin: 5px 0;
+	}
+
+	.section__titulo{
+		width: 100%;
+	}
+	.cursos{
+		flex-wrap: wrap;
+		margin-top: 0;
+
+	}
+
+	.cursos__columna{
+		width: 49%;
+	}
+	.footer .social [class^="icon-"]{
+		margin: 0 10px;
+	}
+	/*nuevos*/
+	.hero{
+	
+		color: black;
+		padding: 1px 10px;
+		display: grid;
+		grid-template-columns: minmax(auto, 480px);
+		justify-content: center;
+	}
+	.hero-container{
+		display: grid;
+		grid-template-columns: 100%;
+		grid-template-areas: "bronce"
+							"silver"
+							"gold"
+							"footer";                                                                               
+												
+		grid-gap: 10px;
+		margin: 10px;
+		border-color: black;
+	}
+}
+
+@media(min-width: 768px){
+	/*responsive b*/
+	
+	
+	.about{
+		text-align: center;
+		margin:10px auto;
+		display:block;
+	}
+
+	.banner__titulo{
+		font-size: 50px;
+	}
+
+	.cursos__titulo{
+		font-size: 40px;
+	}
+}
+
+@media(min-width: 1024px){
+	.logo{
+		display: inline;
+		/*width: 100%;*/
+		margin-right: 30%;
+		
+	}
+
+	.cursos{
+		margin:auto;
+		width: 95%;
+	}
+
+	.contenedor{
+	
+	width: 1000px;
+	}
+
+	.section__titulo{
+		font-size: 50px;
+		margin: 30px 0;
+	}
+
+	.nav{
+
+		position: static;
+	}
+
+	.menu{
+		display: flex;
+	}
+
+	.icon-menu{
+		display: none;
+	}
+
+	.menu__link{
+		background: none;
+		font-size: 20px;
+	}
+
+	.select{
+		color: #fff;
+		background: #FBA919;
+	}
+
+	.banner__titulo{
+		font-size: 60px;
+	}
+
+	.banner__txt{
+		font-size: 25px;
+	}
+
+	.info{
+		margin-top: -120px;
+	}
+
+	.info__columna{
+		padding: 30px;
+	}
+
+	.cursos__descripcion{
+		padding: 20px;
+
+	}
+
+	.info__titulo{
+		font-size: 40px;
+		text-align: center;
+	}
+
+	.cursos__titulo{
+		font-size: 50px;
+	}
+	.cursos__txt{
+		font-size: 20px;
+	}
+	/*nuevos*/
+	.hero{
+	
+		color: black;
+		padding: 1px 10px;
+		display: grid;
+		grid-template-columns: minmax(auto, 1024px);
+		justify-content: center;
+	}
+	.hero-container{
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-template-areas: "bronce silver gold"
+							"bronce silver gold"
+							"bronce silver gold"
+							"footer footer footer";                                                                               
+												
+		grid-gap: 10px;
+		margin: 10px;
+		border-color: black;
+	}
+}
