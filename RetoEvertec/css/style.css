@@ -121,7 +121,7 @@ img{
 
 .hero{
 	
-	color: white;
+	color: black;
 	padding: 1px 10px;
 	display: grid;
 	grid-template-columns: minmax(auto, 1024px);
@@ -182,7 +182,7 @@ img{
 
 	.hero{
 	
-		color: white;
+		color: black;
 		padding: 1px 10px;
 		display: grid;
 		grid-template-columns: minmax(auto, 480px);
