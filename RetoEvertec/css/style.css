@@ -179,4 +179,23 @@ img{
 		grid-template-columns: repeat(1, minmax(100%, 293px));
 		grid-gap: 3px;
 	}
+
+	.hero{
+	
+		color: white;
+		padding: 1px 10px;
+		display: grid;
+		grid-template-columns: minmax(auto, 480px);
+		justify-content: center;
+	}
+	.hero-container{
+		display: grid;
+		grid-template-columns: 100%;
+		grid-template-areas: "bronce"
+							"silver"
+							"gold";                                                                               
+												
+		grid-gap: 10px;
+		margin: 10px;
+		border-color: black;
 }
