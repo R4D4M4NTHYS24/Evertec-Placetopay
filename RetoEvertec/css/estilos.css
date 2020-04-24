@@ -49,12 +49,12 @@ a{
 .header{
 	height: 60px;
 }
-/**/
+
 .header, .contenedor{
 	display: flex;
 	justify-content: space-between;
 }
-/**/
+
 .logo, .icon-menu{
 	margin: 5px;
 	color: #fff;
@@ -164,7 +164,7 @@ que era mejor usarse en el hover de arriva .menu__link, .select
 	text-decoration: none;
 }
 
-/*formulario contacto*/
+/*--------------------------------------------Formulario de contacto------------------------------------------------*/
 
 .contact-form{
     margin-top: 50px;
@@ -242,7 +242,7 @@ input, textarea, button{
 	
 }
 
-/*---------------------------------Estilos de footer---------------------------------*/
+/*--------------------------------------------Estilos de footer------------------------------------------------*/
 
 .footer{
 	background: #333;
@@ -263,7 +263,7 @@ input, textarea, button{
 	height: 50px;
 	line-height: 40px;
 }
-/*Estilos contenido y planes*/
+/*--------------------------------------------Estilos contenido y planes------------------------------------------------*/
 
 
 .post-list{
@@ -349,7 +349,7 @@ img{
   	color: #ff9800;
 }
 
-/*prueba*/
+
 
 .hero{
 	
@@ -443,7 +443,7 @@ img{
 	.footer .social [class^="icon-"]{
 		margin: 0 10px;
 	}
-	/*nuevos*/
+	
 	.hero{
 	
 		color: black;
@@ -521,8 +521,7 @@ img{
 
 @media(min-width: 1024px){
 	.logo{
-		display: inline;
-		/*width: 100%;*/
+		display: inline;		
 		margin-right: 30%;
 		
 	}
@@ -597,7 +596,7 @@ img{
 	.cursos__txt{
 		font-size: 20px;
 	}
-	/*nuevos*/
+	
 	.hero{
 	
 		color: black;

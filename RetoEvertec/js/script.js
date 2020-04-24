@@ -1,4 +1,4 @@
-/*************************************************Codigo del Menu**********************************************/
+/*--------------------------------Codigo del Menu--------------------------------*/
 
 var btnMenu = document.getElementById('btn-menu');//Variable que me almacena el id de btnMenu que esta dentro del span del html
 var nav = document.getElementById('nav');//Variable que me almacena el id de nav del html
@@ -7,7 +7,7 @@ btnMenu.addEventListener('click', function(){//Al hacer click en el icono del me
 	nav.classList.toggle('mostrar');
 })
 
-/*************************************************Formulario de contacto**********************************************/
+/*--------------------------------Formulario de Contacto--------------------------------*/
 
 var email = document.getElementById("email");
 var form = document.getElementById("form");
