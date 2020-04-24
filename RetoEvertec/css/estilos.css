@@ -439,31 +439,7 @@ img{
 		font-size: 18px;
 		margin: 7px 0;
 	}
-	.info, .cursos{
-		display: flex;
-		justify-content: space-between;
-		margin-top: -50px;
-	}
-	.info__columna{
-		width: 32%;
-	}
-	.info__titulo{
-		font-size: 30px;
-		margin: 5px 0;
-	}
 
-	.section__titulo{
-		width: 100%;
-	}
-	.cursos{
-		flex-wrap: wrap;
-		margin-top: 0;
-
-	}
-
-	.cursos__columna{
-		width: 49%;
-	}
 	.footer .social [class^="icon-"]{
 		margin: 0 10px;
 	}
@@ -497,7 +473,7 @@ img{
 	}
 }
 
-@media(min-width: 768px){
+@media(max-width: 768px){
 	/*responsive b*/
 	
 	
@@ -519,7 +495,7 @@ img{
 		color: black;
 		padding: 1px 10px;
 		display: grid;
-		grid-template-columns: minmax(auto, 480px);
+		grid-template-columns: minmax(auto, 780px);
 		justify-content: center;
 	}
 	.hero-container{
