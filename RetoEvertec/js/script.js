@@ -1,58 +1,4 @@
-
-/*let character = {};//almacena el objeto del personaje en el DOM
-let postElements;//variable que contiene la posicion en el DOM de los cards de los personajes
-let characterPosition;//Almacena el numero aleatorio para la peticion random que se hace en el index a la API
-let characterPosition2;//Almacena el numero aleatorio para la peticion random que se hace en el index a la API
-let characterPosition3;//Almacena el numero aleatorio para la peticion random que se hace en el index a la API
-
-function userInfo() {
-    characterPosition = Math.floor(Math.random() * 493 + 1) - 1;
-    characterPosition2 = Math.floor(Math.random() * 493 + 1) - 1;
-    characterPosition3 = Math.floor(Math.random() * 493 + 1) - 1;
-    
-    //la escritura ${} se usa para conectar cadenas de texto con variables
-    fetch(`https://rickandmortyapi.com/api/character/[${characterPosition},${characterPosition2},${characterPosition3}]`).then((respuesta) => {
-        return respuesta.json();
-    })
-    .then((respuesta) => {
-        
-            
-        postElements = document.getElementsByClassName('post');
-        for (let index = 0; index < postElements.length; index++) {          
-            let postImage = postElements[index].querySelector('.image');            
-            character = respuesta[index];
-            postImage.src = character.image;
-            
-            postElements[index].addEventListener('click', function(){
-               
-                localStorage.setItem('character', JSON.stringify(respuesta[index]));
-            });
-            
-            
-
-            
-            
-            
-        }
-        
-        
-       
-        
-
-        
-
-        
-
-
-
-    })
-    
-}
-
-userInfo();
-
-*/
-
+/*************************************************Codigo del Menu**********************************************/
 
 var btnMenu = document.getElementById('btn-menu');//Variable que me almacena el id de btnMenu que esta dentro del span del html
 var nav = document.getElementById('nav');//Variable que me almacena el id de nav del html
@@ -61,5 +7,45 @@ btnMenu.addEventListener('click', function(){//Al hacer click en el icono del me
 	nav.classList.toggle('mostrar');
 })
 
+/*************************************************Formulario de contacto**********************************************/
+
+var email = document.getElementById("email");
+var form = document.getElementById("form");
+
+let name;
+let message;
+let userObject = {};
+let mobile;
+let factory;
+let acept;
+
+name = document.getElementById("name");
+message = document.getElementById("message");
+mobile = document.getElementById("mobile");
+factory = document.getElementById("factory");
+acept = document.getElementById("acept");
+
+email.addEventListener("input", function (event) {
+  if (email.validity.typeMismatch) {
+    
+    email.setCustomValidity("I expect an e-mail, darling!");
+  } else {
+    email.setCustomValidity("");
+  }
+});
+
+form.addEventListener("submit", function (event) {
+    event.preventDefault();
+    userObject.name = name.value;
+    userObject.email = email.value;
+    userObject.mobile = mobile.value;
+    userObject.factory = factory.value;
+    userObject.acept = acept.value;         
+    userObject.message = message.value;
+    
+    console.log("envie");
+    localStorage.setItem('submit', JSON.stringify(userObject));
+    console.log(userObject);
+  });
 
 	
